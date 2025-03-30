@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Hazel Autobiography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>WELCOME!</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home" onclick="handleNavClick(event, 'home')">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about" onclick="handleNavClick(event, 'about')">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#education" onclick="handleNavClick(event, 'education')">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#favorites" onclick="handleNavClick(event, 'favorites')">Favorites</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#photos" onclick="handleNavClick(event, 'photos')">Photos</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact" onclick="handleNavClick(event, 'contact')">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+    <div class="links">
+        <a href="#home" onclick="handleNavClick(event, 'home')">Home</a>
+        <a href="#about" onclick="handleNavClick(event, 'about')">About</a>
+        <a href="#education" onclick="handleNavClick(event, 'education')">Education</a>
+        <a href="#Favorites" onclick="handleNavClick(event, 'favorites')">Favorites</a>
+        <a href="#photos" onclick="handleNavClick(event, 'photos')">Photos</a>
+        <a href="#contact" onclick="handleNavClick(event, 'contact')">Contact</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+    </div>
+</div>
+    </nav>
+    <section id="home" class="content-section animate">
+    <div class="main-container">
+        <div class="image animated" data-aos="zoom-in-right" data-aos-duration="2500">
+            <div class="image-container">
+                <img src="hazel.jpg" alt="">
+                <div class="circle-line"></div>
+            </div>
+        </div>
+        <div class="content">
+            <h1 class="animate__animated animate__lightSpeedInRight" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hi I'm <span>Hazel!</span></h1>
+            <div class="typewriter animate__animated animate__lightSpeedInRight animate__slow" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span>Computer Engineering Student</span></div>
+            <p class="animate__animated animate__swing animate__slow" data-aos="flip-up" data-aos-duration="900" data-aos-delay="1000">Know more about me!</p>
+            <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                <a href="https://www.instagram.com/hazeee.life/profilecard/?igsh=MXM2OWQ1MDdpbGhpbQ=="><img src="instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/share/16AX84z2yc/"><img src="facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/haze__nn?t=vfwMIZ8hSWuDOrQl7AZMBw&s=09"><img src="twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="about" class="content-section" style="display: none;">
+        <div class="about-container">
+            <div class="about-image zoom-in animate__animated animate__slideInLeft" data-aos="zoom-in-left" data-aos-duration="1000">
+                <img src="1.jpg" alt="About Image">
+            </div>
+            <div class="about-content">
+                <h2 class="animate__animated animate__flipInX animate__slow">About Me</h2>
+                <div class="about-paragraph">
+                    <p>Hi! I am Hazel Ann Olmo Reyes, 19 years old, I was born and raised in Jalajala Rizal,I am the youngest, I have one older sister.</p>
+                </div>
+                <div class="about-paragraph">
+                    <p>Currently, I am taking up Bachelor of Science in Computer Engineering at University of Rizal System - Morong Campus</p>
+                </div>
+                <div class="about-paragraph">
+                    <p>Personally, I am a shy person to most people, but I am super talkative and funny to those people I feel comfortable with.</p>
+                </div>
+                <div class="about-paragraph">
+                    <p>Outside academics, I love traveling, I also love watching Kdrama and Thai drama and Kpop, it is part of my stress reliever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="content-section" style="display: none;">
+        <div class="education-container">
+            <div class="about-content">
+                <h2 class="animate__animated animate__flipInX animate__slow">Education</h2>
+                <div class="education-grid">
+                    <div class="education-column">
+                        <div class="education-item">
+                            <h3>Daycare</h3>
+                            <p>Barangay Bayugo Daycare center</p>
+                        </div>
+                        <div class="education-item">
+                            <h3>Senior High School</h3>
+                            <p>St. Michael Parochial School</p>
+                        </div>
+
+                    </div>
+                    <div class="education-column">
+                        <div class="education-item">
+                            <h3>Kinder & Elementary</h3>
+                            <p>Bayugo Elementary School</p>
+                        </div>
+                        <div class="education-item">
+                            <h3>College</h3>
+                            <p>University of Rizal System - Morong Campus</p>
+                        </div>
+                    </div>
+                    <div class="education-column">
+                        <div class="education-item">
+                            <h3>Junior High School</h3>
+                            <p>Bayugo National High School</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="favorites" class="content-section" style="display: none;">
+    <div class="favorites-container">
+        <center><h2 class="animate__animated animate__flipInX animate__slow">Favebook</h2></center>
+
+        <!-- Post 1: Things to Do -->
+        <div class="post-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="post-header">
+                <img src="hazel.jpg" alt="Profile" class="profile-pic">
+                <div class="post-info">
+                    <h3>Hazeee</h3>
+                    <span class="post-time">Things To Do</span>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="post-content">
+                <p>These are the things I love to do in my free time! ✨</p>
+            </div>
+            <div class="post-gallery">
+                <div class="gallery-item">
+                    <img src="8.jpg" alt="Listening to Music">
+                    <div class="item-caption">Listening To Music</div>
+                </div>
+                <div class="gallery-item">
+                    <video width="100%" controls>
+                        <source src="stranger.mp4" type="video/mp4">
+                        <source src="stranger.webm" type="video/webm">
+                    </video>
+                    <div class="item-caption">Watching</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="9.jpg" alt="Sleeping">
+                    <div class="item-caption">Sleeping</div>
+                </div>
+            </div>
+            <div class="post-reactions">
+                <div class="reaction-icons">
+                    <span><i class="fa-solid fa-heart"></i> 152</span>
+                    <span><i class="fa-solid fa-comment"></i> 24</span>
+                    <span><i class="fa-solid fa-share"></i> 7</span>
+                </div>
+                <div class="reaction-buttons">
+                    <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <button><i class="fa-solid fa-comment"></i> Comment</button>
+                    <button><i class="fa-solid fa-share"></i> Share</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post 2: Singers -->
+        <div class="post-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="post-header">
+                <img src="hazel.jpg" alt="Profile" class="profile-pic">
+                <div class="post-info">
+                    <h3>Hazeee</h3>
+                    <span class="post-time">My Favorite Singers</span>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="post-content">
+                <p>Singers I'm currently obssess with ^.^</p>
+            </div>
+            <div class="post-gallery">
+                <div class="gallery-item">
+                    <img src="10.jpg" alt="Blackpink">
+                    <div class="item-caption">
+                        Blackpink
+                        <a href="https://www.instagram.com/blackpinkofficial" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="11.jpg" alt="IU">
+                    <div class="item-caption">
+                        IU
+                        <a href="https://www.instagram.com/dlwlrma?igsh=ZGtjeGd0ZXJucXg1" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="12.jpg" alt="Gracie Abrams">
+                    <div class="item-caption">
+                        GRACIE ABRAMS
+                        <a href="https://www.instagram.com/gracieabrams?igsh=M3M5OGZzZ2xsMG12" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-reactions">
+                <div class="reaction-icons">
+                    <span><i class="fa-solid fa-heart"></i> 189</span>
+                    <span><i class="fa-solid fa-comment"></i> 42</span>
+                    <span><i class="fa-solid fa-share"></i> 15</span>
+                </div>
+                <div class="reaction-buttons">
+                    <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <button><i class="fa-solid fa-comment"></i> Comment</button>
+                    <button><i class="fa-solid fa-share"></i> Share</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post 3: Korean Actors -->
+        <div class="post-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="post-header">
+                <img src="hazel.jpg" alt="Profile" class="profile-pic">
+                <div class="post-info">
+                    <h3>Hazeee</h3>
+                    <span class="post-time">Korean Actors & Actresses I Love</span>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="post-content">
+                <p>My loves 💕</p>
+            </div>
+            <div class="post-gallery">
+                <div class="gallery-item">
+                    <img src="13.jpg" alt="Kim Sejeong">
+                    <div class="item-caption">
+                        Kim Sejeong
+                        <a href="https://www.instagram.com/clean_0828?igsh=MWx0ZTdwYjFqNTU1OQ==" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="14.jpg" alt="Park Hyung-Sik">
+                    <div class="item-caption">
+                        Park Hyung-Sik
+                        <a href="https://www.instagram.com/phs1116?igsh=MWRxNW5rMzJ1Y3NlMQ==" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="15.jpg" alt="Lee Hyeri">
+                    <div class="item-caption">
+                        Lee Hyeri
+                        <a href="https://www.instagram.com/hyeri_0609?igsh=MWg3aTZtbGE0YW80Nw==" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-reactions">
+                <div class="reaction-icons">
+                    <span><i class="fa-solid fa-heart"></i> 207</span>
+                    <span><i class="fa-solid fa-comment"></i> 38</span>
+                    <span><i class="fa-solid fa-share"></i> 12</span>
+                </div>
+                <div class="reaction-buttons">
+                    <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <button><i class="fa-solid fa-comment"></i> Comment</button>
+                    <button><i class="fa-solid fa-share"></i> Share</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post 4: Thai Actresses -->
+        <div class="post-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <div class="post-header">
+                <img src="hazel.jpg" alt="Profile" class="profile-pic">
+                <div class="post-info">
+                    <h3>Hazeee</h3>
+                    <span class="post-time">Thai Actresses I Adore</span>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="post-content">
+                <p>My loves 💕</p>
+            </div>
+            <div class="post-gallery">
+                <div class="gallery-item">
+                    <img src="16.jpg" alt="Emi">
+                    <div class="item-caption">
+                        Emi
+                        <a href="https://www.instagram.com/emiamily?igsh=MXE4Y3Z6bmowZ2t2OQ==" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="17.jpg" alt="Lingling">
+                    <div class="item-caption">
+                        Lingling
+                        <a href="https://www.instagram.com/linglingkwong?igsh=Mzg1azltaTZ6YjY1" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="18.jpg" alt="Namtan">
+                    <div class="item-caption">
+                        Namtan
+                        <a href="https://www.instagram.com/namtan.tipnaree?igsh=YjBteTFycm03NGsy" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-reactions">
+                <div class="reaction-icons">
+                    <span><i class="fa-solid fa-heart"></i> 178</span>
+                    <span><i class="fa-solid fa-comment"></i> 29</span>
+                    <span><i class="fa-solid fa-share"></i> 8</span>
+                </div>
+                <div class="reaction-buttons">
+                    <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <button><i class="fa-solid fa-comment"></i> Comment</button>
+                    <button><i class="fa-solid fa-share"></i> Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="post-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <div class="post-header">
+                <img src="hazel.jpg" alt="Profile" class="profile-pic">
+                <div class="post-info">
+                    <h3>Hazeee</h3>
+                    <span class="post-time">Thai Queer Couple I love</span>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="post-content">
+                <p>My top thai queer actress/actor <3</p>
+            </div>
+            <div class="post-gallery">
+                <div class="gallery-item">
+                    <img src="49.jpg" alt="Emi">
+                    <div class="item-caption">
+                        FreenBecky
+                        <a href="https://www.instagram.com/srchafreen?igsh=NDRrOGplc2Znampw" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                         <a href="https://www.instagram.com/beccca?igsh=ajJvcTBmZXl6MGFt" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="50.jpg" alt="Lingling">
+                    <div class="item-caption">
+                        GeminiFourth
+                        <a href="https://www.instagram.com/gemini_nt?igsh=MWFrandjMGJuaTVwag==" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                         <a href="https://www.instagram.com/fourth.ig?igsh=MmtxeXN0YTFyNGti" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="51.jpg" alt="Namtan">
+                    <div class="item-caption">
+                        EmiBonnie
+                        <a href="https://www.instagram.com/emiamily?igsh=MXE4Y3Z6bmowZ2t2OQ==" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                         <a href="https://www.instagram.com/beonnnie?igsh=aXBheW5rOTR5b3A=" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="52.jpg" alt="Namtan">
+                    <div class="item-caption">
+                        ViewJune
+                        <a href="https://www.instagram.com/view.benyapa?igsh=MWZlNnN6ZzZ2Mjd5dg==" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                         <a href="https://www.instagram.com/junewanwimol19?igsh=bWpwZHAydnkwMjFz" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="53.jpg" alt="Namtan">
+                    <div class="item-caption">
+                        MilkLove
+                        <a href="https://www.instagram.com/panly.v?igsh=amhtZXk0eTk1Z2oz" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                         <a href="https://www.instagram.com/loverrukk?igsh=MWprOTgyY3gycTJ4dA==" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="54.jpg" alt="Namtan">
+                    <div class="item-caption">
+                        Englot
+                        <a href="https://www.instagram.com/fa_engfa8?igsh=dHQzYWhkc3Nmcmtm" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                         <a href="https://www.instagram.com/itscharlotty?igsh=YWE1b2p0dW84anZh" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-reactions">
+                <div class="reaction-icons">
+                    <span><i class="fa-solid fa-heart"></i> 178</span>
+                    <span><i class="fa-solid fa-comment"></i> 29</span>
+                    <span><i class="fa-solid fa-share"></i> 8</span>
+                </div>
+                <div class="reaction-buttons">
+                    <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <button><i class="fa-solid fa-comment"></i> Comment</button>
+                    <button><i class="fa-solid fa-share"></i> Share</button>
+                </div>
+            </div>
+        </div>
+        <!-- Post 5: K-pop Groups -->
+        <div class="post-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <div class="post-header">
+                <img src="hazel.jpg" alt="Profile" class="profile-pic">
+                <div class="post-info">
+                    <h3>Hazeee</h3>
+                    <span class="post-time">K-pop Groups I Stan</span>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="post-content">
+                <p>My OG kpop babies <3</p>
+            </div>
+            <div class="post-gallery">
+                <div class="gallery-item">
+                    <img src="41.jpg" alt="Red Velvet">
+                    <div class="item-caption">
+                        Red Velvet
+                        <a href="https://www.instagram.com/redvelvet.smtown?igsh=aWxzNDJhNjBvaTJm" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="42.jpg" alt="Blackpink">
+                    <div class="item-caption">
+                        Blackpink
+                        <a href="https://www.instagram.com/blackpinkofficial" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="40.jpg" alt="Twice">
+                    <div class="item-caption">
+                        Twice
+                        <a href="https://www.instagram.com/twicetagram?igsh=MXJxOWdsOTRoODA4Zg==" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-reactions">
+                <div class="reaction-icons">
+                    <span><i class="fa-solid fa-heart"></i> 243</span>
+                    <span><i class="fa-solid fa-comment"></i> 47</span>
+                    <span><i class="fa-solid fa-share"></i> 21</span>
+                </div>
+                <div class="reaction-buttons">
+                    <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <button><i class="fa-solid fa-comment"></i> Comment</button>
+                    <button><i class="fa-solid fa-share"></i> Share</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post 6: Favorite Songs -->
+        <div class="post-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <div class="post-header">
+                <img src="hazel.jpg" alt="Profile" class="profile-pic">
+                <div class="post-info">
+                    <h3>Hazeee</h3>
+                    <span class="post-time">Songs On Repeat</span>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="post-content">
+                <p>These songs are my current favorites! 🎵</p>
+            </div>
+            <div class="post-audio">
+                <div class="audio-item">
+                    <div class="audio-info">
+                        <img src="46.jpg" alt="Song Cover" class="song-cover">
+                        <div class="song-details">
+                            <h4>More than words</h4>
+                            <p>Emi Thasorn</p>
+                        </div>
+                    </div>
+                    <audio controls>
+                        <source src="emi.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <div class="audio-info">
+                        <img src="47.jpg" alt="Song Cover" class="song-cover">
+                        <div class="song-details">
+                            <h4>You'll be in my heart</h4>
+                            <p>Niki</p>
+                        </div>
+                    </div>
+                    <audio controls>
+                        <source src="niki.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <div class="audio-info">
+                        <img src="48.jpg" alt="Song Cover" class="song-cover">
+                        <div class="song-details">
+                            <h4>That's so true</h4>
+                            <p>Gracie Abrams</p>
+                        </div>
+                    </div>
+                    <audio controls>
+                        <source src="gracie.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="post-reactions">
+                <div class="reaction-icons">
+                    <span><i class="fa-solid fa-heart"></i> 167</span>
+                    <span><i class="fa-solid fa-comment"></i> 31</span>
+                    <span><i class="fa-solid fa-share"></i> 14</span>
+                </div>
+                <div class="reaction-buttons">
+                    <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <button><i class="fa-solid fa-comment"></i> Comment</button>
+                    <button><i class="fa-solid fa-share"></i> Share</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Replace the existing Photos section with this -->
+<section id="photos" class="content-section" style="display: none;">
+    <div class="love-container">
+        <h2 class="animate__animated animate__flipInX animate__slow">Some Gallery Photos</h2>
+
+        <div class="pinterest-gallery">
+            <!-- Row 1 -->
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="pin-image">
+                    <img src="19.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">Childhood friends</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                <div class="pin-image">
+                    <img src="20.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">SMPS buddies</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="pin-image">
+                    <img src="21.jpg" alt="Gallery Image" class="swappable-image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">My babies</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+                <div class="pin-image">
+                    <img src="22.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">Zia</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="pin-image">
+                    <img src="23.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">Lee & Aaliyah</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+                <div class="pin-image">
+                    <img src="24.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">Me & Ate</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Continue with more images -->
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="pin-image">
+                    <img src="25.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">My Salty</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                <div class="pin-image">
+                    <img src="26.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">My Salty</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="pin-image">
+                    <img src="27.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">My Salty</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add the remaining images -->
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+                <div class="pin-image">
+                    <img src="28.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">Fam</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="pin-image">
+                    <img src="29.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">Fam</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+                <div class="pin-image">
+                    <img src="30.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">Fam</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="pin-image">
+                    <img src="31.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">Me</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                <div class="pin-image">
+                    <img src="32.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">Me</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="pin-image">
+                    <img src="33.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">Me</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+                <div class="pin-image">
+                    <img src="34.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">Smps Memories</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="pin-image">
+                    <img src="35.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">Smps Memories</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+                <div class="pin-image">
+                    <img src="36.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">Smps Memories</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="pin-image">
+                    <img src="37.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">College Friends</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                <div class="pin-image">
+                    <img src="38.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">College Friends</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="pin-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="pin-image">
+                    <img src="39.jpg" alt="Gallery Image">
+                    <div class="pin-overlay">
+                        <h3 class="pin-title">College Friends</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for enlarged image view -->
+    <div id="pinModal" class="pin-modal">
+        <span class="pin-close">&times;</span>
+        <img class="pin-modal-content" id="pinModalImage">
+        <div id="pinModalCaption" class="pin-modal-caption"></div>
+    </div>
+</section>
+<section id="contact" class="content-section">
+    <div class="imessage-container">
+        <div class="imessage-header">
+            <h2>Contact me!</h2>
+            <div class="imessage-status">Online</div>
+        </div>
+
+        <div class="imessage-chat">
+            <!-- Contact info bubbles styled like iMessage -->
+            <div class="message received">
+                <div class="bubble">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Jalajala, Rizal, Philippines</span>
+                </div>
+                <div class="timestamp">Location</div>
+            </div>
+
+            <div class="message received">
+                <div class="bubble">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+639551023408">+63 955 1023 408</a>
+                </div>
+                <div class="timestamp">Phone</div>
+            </div>
+
+            <div class="message received">
+                <div class="bubble">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:hazelannolmoreyes0613@gmail.com?subject=Hello%20Hazel&body=Hi%20Hazel,%0A%0AI%20wanted%20to%20reach%20out%20to%20you..." class="email-link">
+                        hazelannolmoreyes0613@gmail.com
+                    </a>
+                </div>
+                <div class="timestamp">Email</div>
+            </div>
+        </div>
+
+        <div class="imessage-input">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/16AX84z2yc/" target="_blank" aria-label="Facebook" rel="noopener">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/hazeee.life/profilecard/?igsh=MXM2OWQ1MDdpbGhpbQ==" target="_blank" aria-label="Instagram" rel="noopener">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/haze__nn?t=vfwMIZ8hSWuDOrQl7AZMBw&s=09" target="_blank" aria-label="Twitter" rel="noopener">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <a href="mailto:hazelannolmoreyes0613@gmail.com?subject=Hello%20Hazel&body=Hi%20Hazel,%0A%0AI%20wanted%20to%20reach%20out%20to%20you..." class="email-link">
+            <div class="imessage-send-button">
+                <span>Connect with me</span>
+                <i class="fas fa-arrow-up"></i>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+// Initialize AOS on page load
+AOS.init({offset: 0});
+
+function hamburg(){
+    const navbar = document.querySelector(".dropdown");
+    navbar.style.transform = "translateY(0)";
+}
+
+function cancel(){
+    const navbar = document.querySelector(".dropdown");
+    navbar.style.transform = "translateY(-500px)";
+}
+
+// New function to handle nav clicks
+function handleNavClick(event, sectionId) {
+    event.preventDefault(); // Prevent default anchor behavior
+    showSection(sectionId);
+
+    // Scroll to top of the page
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+function initEducationAnimation() {
+    const educationColumns = document.querySelectorAll('.education-column');
+
+    educationColumns.forEach((column, index) => {
+        column.setAttribute('data-aos', 'fade-up');
+        column.setAttribute('data-aos-duration', '1000');
+        column.setAttribute('data-aos-delay', `${100 * (index + 1)}`);
+    });
+
+    // Reinitialize AOS to apply new animations
+    AOS.init({
+        offset: 0, // Adjust as needed for mobile responsiveness
+        once: false // Allow animations to trigger multiple times
+    });
+}
+
+function showSection(sectionId) {
+    // Ensure sectionId is lowercase to match actual section IDs
+    sectionId = sectionId.toLowerCase();
+
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    const selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
+
+    if (sectionId === 'about' || sectionId === 'education' || sectionId === 'favorites') {
+        const aboutImage = selectedSection.querySelector('.about-image');
+        if (aboutImage) {
+            aboutImage.classList.add('zoom-in-effect');
+            setTimeout(() => {
+                aboutImage.classList.remove('zoom-in-effect');
+            }, 1000); // Duration of the zoom-in effect
+        }
+    }
+
+    // Reinitialize AOS for the specific section if it's education
+    if (sectionId === 'education') {
+        initEducationAnimation();
+    }
+
+    cancel(); // Close the dropdown menu after selecting a section
+}
+
+function reanimateHomeSection() {
+    const homeSection = document.getElementById('home');
+    homeSection.classList.remove('animate');
+    void homeSection.offsetWidth; // Trigger reflow to restart CSS animation
+    homeSection.classList.add('animate');
+    reanimateAOS();
+}
+
+function reanimateAOS() {
+    const homeSectionElements = document.querySelectorAll('#home [data-aos]');
+    homeSectionElements.forEach(element => {
+        element.classList.remove('aos-animate');
+        void element.offsetWidth; // Trigger reflow to restart AOS animation
+        element.classList.add('aos-animate');
+    });
+}
+
+// Automatically show the Home section when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    showSection('home');
+    initEducationAnimation(); // Initialize education animations on page load
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.querySelector('audio');
+    var fallbackImg = document.getElementById('audioFallback');
+
+    if (audio) {
+        audio.addEventListener('error', function(e) {
+            console.error('Audio error:', e);
+            audio.style.display = 'none';
+            if (fallbackImg) fallbackImg.style.display = 'block';
+            alert('Audio could not be loaded. Please check the file.');
+        });
+    }
+});
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all images in the favorites section
+    const favoriteImages = document.querySelectorAll('#favorites .love-image');
+
+    favoriteImages.forEach(image => {
+        // Add event listeners for mouse enter and leave
+        image.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.05)';
+            this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
+            this.style.zIndex = '10';
+
+            // Find caption within this image container
+            const caption = this.querySelector('.love-caption');
+            if (caption) {
+                caption.style.opacity = '1';
+                // Remove or comment out this line to prevent the black background
+                // caption.style.backgroundColor = 'rgba(0,0,0,0.7)';
+            }
+        });
+
+        image.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1)';
+            this.style.boxShadow = 'none';
+            this.style.zIndex = '1';
+
+            // Find caption within this image container
+            const caption = this.querySelector('.love-caption');
+            if (caption) {
+                caption.style.opacity = '';
+                caption.style.backgroundColor = '';
+            }
+        });
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all images in both favorites and photos sections
+    const allGalleryImages = document.querySelectorAll('#favorites .love-image img, #photos .love-image img');
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const modalCaption = document.getElementById('modalCaption');
+    const closeModal = document.querySelector('.close-modal');
+
+    // Add click event to all gallery images
+    allGalleryImages.forEach(img => {
+        // Skip audio and video elements
+        if (img.parentElement.querySelector('audio') || img.parentElement.querySelector('video')) {
+            return;
+        }
+
+        // Add pointer cursor to show images are clickable
+        img.style.cursor = 'pointer';
+
+        // Add click event to open modal
+        img.addEventListener('click', function() {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+
+            // Get caption if exists
+            const captionElement = this.parentElement.querySelector('.love-caption h3');
+            modalCaption.textContent = captionElement ? captionElement.textContent : '';
+        });
+    });
+
+    // Close modal when clicking the × button
+    closeModal.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    // Close modal when clicking outside the image
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+    document.addEventListener('DOMContentLoaded', function() {
+    // Get all images in the photos section
+    const photoImages = document.querySelectorAll('#photos .love-image');
+
+    photoImages.forEach(image => {
+        // Add event listeners for mouse enter and leave (same as favorites section)
+        image.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.05)';
+            this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
+            this.style.zIndex = '10';
+
+            // Find caption within this image container
+            const caption = this.querySelector('.love-caption');
+            if (caption) {
+                caption.style.opacity = '1';
+            }
+        });
+
+        image.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1)';
+            this.style.boxShadow = 'none';
+            this.style.zIndex = '1';
+
+            // Find caption within this image container
+            const caption = this.querySelector('.love-caption');
+            if (caption) {
+                caption.style.opacity = '';
+                caption.style.backgroundColor = '';
+            }
+        });
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    // Find the image with src="21.jpg" in the photos section
+    const photo21 = document.querySelector('#photos img[src="21.jpg"]');
+
+    if (photo21) {
+        // Track which photo we're showing (0=21.jpg, 1=45.jpg, 2=44.jpg)
+        let currentPhotoIndex = 0;
+        const photoSources = ["21.jpg", "45.jpg", "44.jpg"];
+
+        // Add click event to the specific image
+        photo21.addEventListener('click', function(event) {
+            // Prevent the modal from opening when we're handling the swap
+            event.stopPropagation();
+
+            // Move to next photo in the cycle
+            currentPhotoIndex = (currentPhotoIndex + 1) % photoSources.length;
+
+            // Add a transition effect
+            this.classList.add('image-swap-effect');
+
+            // Change the image source after a short delay (during fade out)
+            setTimeout(() => {
+                this.src = photoSources[currentPhotoIndex];
+            }, 250);
+
+            // Remove the effect class after animation completes
+            setTimeout(() => {
+                this.classList.remove('image-swap-effect');
+            }, 500);
+        });
+    }
+});
+// Add this JavaScript after your existing script
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the modal and its elements
+    const modal = document.getElementById('pinModal');
+    const modalImg = document.getElementById('pinModalImage');
+    const modalCaption = document.getElementById('pinModalCaption');
+    const closeBtn = document.querySelector('.pin-close');
+
+    // Get all images in the Pinterest gallery
+    const pinImages = document.querySelectorAll('.pinterest-gallery .pin-image img');
+
+    // Add click event to each image to open the modal
+    pinImages.forEach(img => {
+        img.style.cursor = 'pointer';
+
+        img.addEventListener('click', function() {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+
+            // Get caption if it exists
+            const captionElement = this.parentElement.querySelector('.pin-overlay .pin-title');
+            modalCaption.textContent = captionElement ? captionElement.textContent : '';
+        });
+    });
+
+    // Close the modal when clicking the × button
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    // Close the modal when clicking outside the image
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    // Handle image swapping for the special image (21.jpg)
+    const swappableImage = document.querySelector('.swappable-image');
+
+    if (swappableImage) {
+        // Track which photo we're showing (0=21.jpg, 1=45.jpg, 2=44.jpg)
+        let currentPhotoIndex = 0;
+        const photoSources = ["21.jpg", "45.jpg", "44.jpg"];
+
+        // Add click event to the specific image
+        swappableImage.addEventListener('click', function(event) {
+            // Prevent the modal from opening when we're handling the swap
+            event.stopPropagation();
+
+            // Move to next photo in the cycle
+            currentPhotoIndex = (currentPhotoIndex + 1) % photoSources.length;
+
+            // Add a transition effect
+            this.style.opacity = '0';
+
+            // Change the image source after a short delay (during fade out)
+            setTimeout(() => {
+                this.src = photoSources[currentPhotoIndex];
+                this.style.opacity = '1';
+            }, 300);
+        });
+    }
+
+    // Adjust layout on window resize for optimal responsive behavior
+    window.addEventListener('resize', function() {
+        // Force the browser to recalculate the layout for optimal masonry effect
+        const gallery = document.querySelector('.pinterest-gallery');
+        if (gallery) {
+            gallery.style.display = 'none';
+            setTimeout(() => {
+                gallery.style.display = '';
+            }, 10);
+        }
+    });
+
+    // Handle lazy loading for the gallery images
+    if ('IntersectionObserver' in window) {
+        const imgObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.add('loaded');
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        // Apply to images with data-src attribute
+        document.querySelectorAll('.pin-image img[data-src]').forEach(img => {
+            imgObserver.observe(img);
+        });
+    }
+
+    // Add hover effects for better interactivity
+    const pinItems = document.querySelectorAll('.pin-item');
+
+    pinItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.15)';
+
+            const overlay = this.querySelector('.pin-overlay');
+            if (overlay) {
+                overlay.style.opacity = '1';
+            }
+        });
+
+        item.addEventListener('mouseleave', function() {
+            this.style.transform = '';
+            this.style.boxShadow = '';
+
+            const overlay = this.querySelector('.pin-overlay');
+            if (overlay) {
+                overlay.style.opacity = '';
+            }
+        });
+    });
+});
+ // JavaScript to enhance the Facebook-inspired Favorites section
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Add click interactions for the post reactions
+    const likeButtons = document.querySelectorAll('.reaction-buttons button:first-child');
+
+    likeButtons.forEach(button => {
+        let isLiked = false;
+
+        button.addEventListener('click', function() {
+            const postCard = this.closest('.post-card');
+            const likeCount = postCard.querySelector('.reaction-icons span:first-child');
+            const likeIcon = likeCount.querySelector('i');
+
+            if (!isLiked) {
+                // Like the post
+                button.style.color = '#1877F2';
+                likeIcon.style.color = '#1877F2';
+                likeIcon.className = 'fa-solid fa-heart';
+
+                // Increment like count
+                let count = parseInt(likeCount.textContent.split(' ')[1]);
+                likeCount.innerHTML = `<i class="fa-solid fa-heart" style="color: #1877F2"></i> ${count + 1}`;
+
+                // Add animation effect
+                button.classList.add('animate__animated', 'animate__heartBeat');
+                setTimeout(() => {
+                    button.classList.remove('animate__animated', 'animate__heartBeat');
+                }, 1000);
+
+                isLiked = true;
+            } else {
+                // Unlike the post
+                button.style.color = '#65676B';
+                likeIcon.style.color = '#65676B';
+
+                // Decrement like count
+                let count = parseInt(likeCount.textContent.split(' ')[1]);
+                likeCount.innerHTML = `<i class="fa-solid fa-heart"></i> ${count - 1}`;
+
+                isLiked = false;
+            }
+        });
+    });
+
+    // Add hover animations for gallery items
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    galleryItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            const caption = this.querySelector('.item-caption');
+            if (caption) {
+                caption.style.opacity = '1';
+            }
+        });
+
+        item.addEventListener('mouseleave', function() {
+            const caption = this.querySelector('.item-caption');
+            if (caption) {
+                caption.style.opacity = '0';
+            }
+        });
+    });
+
+    // Add comment functionality
+    const commentButtons = document.querySelectorAll('.reaction-buttons button:nth-child(2)');
+
+    commentButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const postCard = this.closest('.post-card');
+
+            // Check if comment box already exists
+            if (!postCard.querySelector('.comment-box')) {
+                // Create comment box
+                const commentBox = document.createElement('div');
+                commentBox.className = 'comment-box';
+                commentBox.innerHTML = `
+                    <div class="comment-input">
+                        <img src="hazel.jpg" alt="Profile" class="comment-profile-pic">
+                        <input type="text" placeholder="Write a comment...">
+                        <button class="post-comment">Post</button>
+                    </div>
+                `;
+
+                // Insert before reactions
+                postCard.insertBefore(commentBox, postCard.querySelector('.post-reactions').nextSibling);
+
+                // Add styles for comment box
+                document.head.insertAdjacentHTML('beforeend', `
+                    <style>
+                        .comment-box {
+                            margin-top: 15px;
+                            border-top: 1px solid #E4E6EB;
+                            padding-top: 15px;
+                        }
+
+                        .comment-input {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        }
+
+                        .comment-profile-pic {
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+                        .comment-input input {
+                            flex-grow: 1;
+                            padding: 8px 12px;
+                            border: 1px solid #E4E6EB;
+                            border-radius: 20px;
+                            outline: none;
+                        }
+
+                        .post-comment {
+                            background-color: #1877F2;
+                            color: white;
+                            border: none;
+                            border-radius: 5px;
+                            padding: 6px 12px;
+                            cursor: pointer;
+                        }
+
+                        .post-comment:hover {
+                            background-color: #166FE5;
+                        }
+                    </style>
+                `);
+            } else {
+                // Toggle comment box visibility
+                const commentBox = postCard.querySelector('.comment-box');
+                commentBox.style.display = commentBox.style.display === 'none' ? 'block' : 'none';
+            }
+        });
+    });
+
+    // Add animation on scroll
+    if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+    }
+});
+</script>
+<div id="imageModal" class="image-modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="modalCaption"></div>
+</div>
+</body>
+</html>
